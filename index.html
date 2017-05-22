@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animate.css">
     <title>Document</title>
+    <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
 </head>
 <body>
 
@@ -78,5 +79,19 @@
                     var parallax = new Parallax(scene);
                 </script>
                 <script src="main.js"></script>
+
+                <script>
+                    const pressed = [];
+                    const secretCode = 'create';
+
+                    window.addEventListener('keyup', (e) => {
+                        pressed.push(e.key);
+                        pressed.splice(-secretCode.length - 1, pressed.length -
+                        secretCode.length);
+                        if(pressed.join('').includes(secretCode)) {
+                            cornify_add();
+                        }
+                    });
+                </script>
 </body>
 </html>
