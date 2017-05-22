@@ -1,0 +1,205 @@
+#bg{
+    background: url('../img/bg.jpg') top repeat-y;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    /*margin-top: 22px;*/
+    overflow: visible;
+    text-align: center;
+}
+
+#scene {
+    z-index: 2;
+}
+
+ul {
+    list-style: none;
+}
+
+/*body {*/
+    /*background: url('../img/bg.jpg') top repeat-y;*/
+    /*background-size:cover;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*margin-top: 22px;*/
+/*}*/
+
+.noFill {
+    fill: none;
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 125px;
+    z-index: 50;
+}
+
+.top h1 {
+    color: #000000;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.top h2 {
+    color: #fff;
+    font-size: 36px;
+    margin: 2px 0 0 240px;
+}
+
+header {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 15px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+header input {
+    width: 75%;
+    box-shadow: none;
+    outline: none;
+    background-color: #c90d98;
+    padding: 14px 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-indent: 18px;
+    float: left;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-right:15px;
+    color: #ffffff;
+}
+
+header input::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header button {
+    background-color: #000;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding: 6px 50px;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    transition:background 0.2s ease;
+}
+
+header button:hover {
+    background-color: #dc17ac;
+}
+
+ul.todo {
+    text-align: left;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul.todo li {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 5px;
+    width: 100%;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+/*ul.todo li:last-of-type {
+    margin: 0;
+}*/
+
+ul.todo li .list_text {
+    flex:3;
+    margin-top: 13px;
+}
+
+
+ul.todo li .buttons button {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+ul.todo li .buttons button svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* -- Styles for Completed lis */
+
+ul.todo#completed li .buttons button.complete svg{
+    background: #e10ca3;
+    transition: background 0.2s ease;
+}
+
+ul#completed.todo {
+    margin-top: 25px;
+}
+
+ul.todo:not(#completed) li .buttons button.complete:hover svg{
+    background: #e10ca3;
+}
+
+ul.todo:not(#completed) li .buttons button.complete:hover svg .fill{
+    fill: #fff;
+}
+
+ul.todo#completed li .buttons button.complete svg .fill{
+    fill: #fff;
+}
+
+/* -- End of copmleted lis styles -- */
+
+
+ul.todo li .buttons button svg .fill {
+    transition: fill 0.2s ease;
+}
+
+ul.todo li .buttons button.remove {
+    /*float: right;*/
+}
+
+ul.todo li .buttons button.remove svg .fill {
+    fill: #c0cecb;
+}
+
+ul.todo li .buttons button.remove:hover svg .fill {
+    fill: #000;
+}
+
+ul.todo li .buttons button.complete {
+   /* float: left;*/
+}
+
+ul.todo li .buttons button.complete svg {
+    border-radius: 12px;
+    border: 1.5px solid #e10ca3;
+}
+
+ul.todo li .buttons button.complete svg .fill {
+    fill: #e10ca3;
+}
+
+
